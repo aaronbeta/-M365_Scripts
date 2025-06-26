@@ -1,0 +1,4 @@
+# Delete Teams Cache - Can be used if Teams don't appear in the client #
+
+%appdata%\Microsoft\Teams
+%userprofile%\appdata\local\Packages\MSTeams_8wekyb3d8bbwe\LocalCache\Microsoft\MSTeams
