@@ -1,0 +1,18 @@
+# Remove MSTeams Accounts on Login - Used for shared accounts #
+
+taskkill /f /im ms-teams.exe
+cd %LocalAppData%\Packages\MSTeams_8wekyb3d8bbwe
+del * /s /q
+rmdir /s /q "%LocalAppData%\Packages\MSTeams_8wekyb3d8bbwe"
+cd %LocalAppData%\Packages\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy
+del * /s /q
+rmdir /s /q "%LocalAppData%\Packages\MSTeams_8wekyb3d8bbwe"
+cd %LocalAppData%\Microsoft\OneAuth
+del * /s /q
+rmdir /s /q "%LocalAppData%\Microsoft\OneAuth"
+cd %LocalAppData%\Microsoft\TokenBroker
+del * /s /q
+rmdir /s /q "%LocalAppData%\Microsoft\TokenBroker"
+cd %LocalAppData%\Microsoft\IdentityCache
+del * /s /q
+rmdir /s /q "%LocalAppData%\Microsoft\IdentityCache"
